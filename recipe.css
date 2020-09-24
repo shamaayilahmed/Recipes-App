@@ -183,7 +183,7 @@ a{
 }
 .popup{
   background: #fff;
-  max-width: 85%;
+  width: 97%;
   max-height: 85%;
   overflow:auto;
   border-radius: 10px;
