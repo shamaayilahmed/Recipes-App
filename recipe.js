@@ -59,7 +59,6 @@ function loadRandom(mealData, random = false) {
     </button>
   </div>
   `;
-
   const btn = meal.querySelector(".meal-body .fav-btn");
   btn.addEventListener('click', () => {
     if (btn.classList.contains('active')) {
@@ -73,7 +72,8 @@ function loadRandom(mealData, random = false) {
 
     fetchFav();
   });
-  meal.addEventListener('click', () => {
+  let rimage=meal.querySelector('.meal_header');
+  rimage.addEventListener('click', () => {
     showMeal(mealData);
   });
   mealsEl.appendChild(meal);
@@ -120,13 +120,14 @@ function addFav(mealData) {
   <i class="fas fa-window-close"></i></button>
   `;
   const btn = fav.querySelector('.clear');
+  const image=fav.querySelector('img');
 
   btn.addEventListener('click', () => {
     removeLS(mealData.idMeal);
     fetchFav();
   });
 
-  fav.addEventListener('click', () => {
+  image.addEventListener('click', () => {
     showMeal(mealData);
   });
   favContainer.appendChild(fav);
