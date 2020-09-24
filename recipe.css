@@ -4,12 +4,12 @@
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
-  background: linear-gradient(60deg, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
   background-size: auto;
   object-fit: scale-down;
   background-position: center center;
   min-height: 100vh; 
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+background: linear-gradient(60deg, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
 
 
 display: flex;
@@ -18,10 +18,10 @@ align-items: center;
 min-height: 100vh;
 }
 .container{
-  margin: 2% 5%;
+  margin: 2%;
   background: #fff;
   box-shadow: 0 0 5px 2px #3333331A;
-  width: 80vw;
+  width: 100vw;
   border-radius: 10px;
 }
 img{
@@ -111,7 +111,8 @@ header button{
 .meal{
   cursor: pointer;
   box-shadow: 0 0 15px 6px #3333331a;
-  margin: 1.2rem;border-radius: 3px;
+  margin: 1.2rem;
+  border-radius: 3px;
   overflow: hidden;
 }
 .meal_header{
