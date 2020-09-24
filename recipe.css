@@ -1,0 +1,228 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: url(./bg0p40.png);
+  background-size: auto;
+  object-fit: scale-down;
+  background-position: center center;
+  min-height: 100vh; /* 
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+background: linear-gradient(60deg, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+ */
+
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.container{
+  margin: 2% 5%;
+  background: #fff;
+  box-shadow: 0 0 5px 2px #3333331A;
+  width: 80vw;
+  border-radius: 10px;
+}
+img{
+  max-width: 100%;
+}
+header{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .logo{
+  width: 40%;
+}
+header .search{
+  display: flex;
+  justify-content: center;
+  flex-wrap: no-wrap;
+  width: 40%;
+}
+header input{
+  width: 80%;
+  background-color: rgb(238, 230, 230);
+  border: none;
+  border-radius: 3px;
+  padding: .5rem 1rem;
+}
+header button{
+  background-color: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
+
+.fav-container{
+  padding: 0.25rem 1rem;
+  text-align: center;
+  background: rgb(216, 137, 137);
+}
+.fav-meals{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  overflow: auto;
+}
+.fav-meals li{
+  position: relative;
+  cursor: pointer;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fav-meals li .clear{
+  background-color:transparent;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0;
+}
+.fav-meals li:hover .clear{
+  opacity: 1;
+}
+
+.fav-meals li img{
+  border: 3px solid #ffffff1A;
+  box-shadow: 0 0 15px 6px #3333331a;
+  width: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.fav-meals li span{
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70px;
+}
+
+.meal{
+  cursor: pointer;
+  box-shadow: 0 0 15px 6px #3333331a;
+  margin: 1.2rem;border-radius: 3px;
+  overflow: hidden;
+}
+.meal_header{
+  position: relative;
+}
+.meal_header .random{
+  position: absolute;
+  top: 15px;
+  background-color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.meal_header img{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.meal-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.meal-body h4{
+  margin: 0;
+}
+.meal-body button{
+  background-color: transparent;
+  border: none;
+  color: #ADA996;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.meal-body .fav-btn.active{
+  color: rgb(228, 57, 57);
+}
+
+a{
+  text-align: center;
+  align-items: center;
+  height: 5%;
+  width: 7%;
+  border-radius: 7%;
+  left: 92%;
+  bottom: 5%;
+  background: rgb(172, 77, 77);
+  position: fixed;
+  color: #fff;
+}    
+/* prepare */
+.popup-container{
+  z-index: 10;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.popup-container.hidden{
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.popup{
+  background: #fff;
+  max-width: 85%;
+  max-height: 85%;
+  overflow:auto;
+  border-radius: 10px;
+}
+.popup .close-popup{
+  background: transparent;
+  font-size: 1.6rem;
+  position: relative;
+  cursor: pointer;
+  top: 0.4rem;
+  left: 93%;
+  border: none;
+}
+.meal-info{
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.6;
+  word-spacing: 0.1rem;
+}
+.meal-info h1{
+  text-align: center;
+}
+.meal-info img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* notification
+.notification{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgb(107, 89, 89);
+  bo
+} */

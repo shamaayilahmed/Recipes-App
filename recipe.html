@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes App</title>
+  <link rel="stylesheet" href="recipe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script src="recipe.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- search -->
+    <header id="top">
+      <div class="logo">
+        <img src="./chefhublogo.png" alt="">
+      </div>
+      <div class="search">
+        <input type="text" name="" id="search-term">
+        <button id="search"><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+    <!-- Fav -->
+    <div class="fav-container">
+      <h3>Favorite Meals</h3>
+      <ul class="fav-meals" id="fav-meals">
+
+      </ul>
+    </div>
+    <!-- Random -->
+    <div class="meals" id="meals">
+    </div>
+  </div>
+
+  <!-- PREpare -->
+  <div class="popup-container hidden" id="meal-popup">
+    <div class="popup">
+      <button id="close-popup" class="close-popup"><i class="fa fa-times"></i></button>
+      <div class="meal-info" id="meal-info">
+        <!-- <h1>Meal Title</h1>
+        <img src="https://www.themealdb.com/images/media/meals/1550441275.jpg" alt="">
+        <p>Lorem Ipsum sit amet</p>
+        <ul>
+          <li>ing 1/ measure</li>
+          <li>ing 2/ measure</li>
+          <li>ing 3/ measure</li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- top button -->
+  <a href="#top">
+    <div class="home"><i class="fa fa-arrow-up"></i></div>
+  </a>
+  
+</body>
+
+</html>
